@@ -86,9 +86,9 @@ checkbox.addEventListener("change", function() {
 function handleParams () {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-    const firstParam = urlParams.get('page')
+    const page = urlParams.get('page')
     const title = document.getElementById("title");
-    title.innerHTML = "Kitaptan " +  firstParam;
+    title.innerHTML = "Kitaptan " +  page;
 }
 
 
