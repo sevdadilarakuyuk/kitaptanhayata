@@ -1,0 +1,23 @@
+{
+  "name": "kitaptanhayata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "html-includes --src src --dest dist --watch",
+    "compile:min": "html-includes --src src --dest dist --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sevdadilarakuyuk/kitaptanhayata.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sevdadilarakuyuk/kitaptanhayata/issues"
+  },
+  "homepage": "https://github.com/sevdadilarakuyuk/kitaptanhayata#readme",
+  "devDependencies": {
+    "html-includes": "^4.3.3"
+  }
+}

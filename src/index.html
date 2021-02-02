@@ -8,50 +8,19 @@
       rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
-<body">
-
+<body>
+    
     <!-- HEADER -->
-   <header>
-       <div class="container">
-           <div class="logo">
-                <span>Tübitak</span>
-                <span>Ada & Sevda</span>
-           </div>
-           <input type="checkbox" name="hidden-checbox" id="hidden-checkbox">
-           <label for="hidden-checkbox">
-                <span id="menutext">MENU</span>
-                <span class="material-icons" id="menuicon">menu</span>
-            </label>
-           <nav class="navbar">
-               <ul id="outer">
-                    <li><a href="#">Anasayfa</a></li>
-                    <li><span class="material-icons">menu_book</span>&nbsp;&nbsp;KİTAPTAN ...</li>
-                    <li>
-                        <ul id="inner">
-                            <li><a href="#">Heykele</a></li>
-                            <li><a href="#">Mimariye</a></li>
-                            <li><a href="#">Müziğe</a></li>
-                            <li><a href="#">Sinemaya</a></li>
-                            <li><a href="#">Resime</a></li>
-                            <li><a href="#">Bilime</a></li>
-                        </ul>
-                    </li>
-                    
-                    <li><a href="#">Sizden Gelenler</a></li>
-                    <li><a href="#">Hakkımızda</a></li>
-                </ul>  
-           </nav>
-       </div>
-   </header>
+    ${require('./_header.html')}
 
-   <!-- HERO -->
-   <section class="hero">
+    <!-- HERO -->
+    <section class="hero">
        <div class="container">
            <h1>Kitaptan Hayata</h1> 
            <div class="content">
                 <p>Kitaptan esinlenerek ortaya çıkan eserler ne kadar da çok farkında mısınız? Bu proje, kitaptan hyatamıza giren bu eserleri ölümsüzleştirmek için tasarlandı.</p>
                 <span class="spacer"></span>
-                <a class="button-a" href="#">
+                <a class="button-a" href="./about.html">
                     <div class="button">
                         <span class="button-text">Devamını Oku</span>
                         <span class="spacer"></span>
@@ -60,63 +29,75 @@
                 </a>
             </div>
        </div>
-   </section>
+    </section>
 
    <!-- MAIN -->
    <section class="main">
 
         <div class="parent" onclick="">
-            <div class="feature">
-                <div class="content">
-                    <h2>Kitaptan Heykele</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <a href="./life.html">
+                <div class="feature">
+                    <div class="content">
+                        <h2>Kitaptan Heykele</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
         
         <div class="parent" onclick="">
-            <div class="feature">
-                <div class="content">
-                    <h2>Kitaptan Mimariye</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <a href="./life.html">
+                <div class="feature">
+                    <div class="content">
+                        <h2>Kitaptan Mimariye</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
         
         <div class="parent" onclick="">
-           <div class="feature">
-                <div class="content">
-                    <h2>Kitaptan Müziğe</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                </div>
-            </div> 
+            <a href="./life.html">
+                <div class="feature">
+                     <div class="content">
+                         <h2>Kitaptan Müziğe</h2>
+                         <p>Lorem ipsum dolor sit amet consectetur.</p>
+                     </div>
+                 </div> 
+            </a>
         </div>
         
         <div class="parent" onclick="">
-            <div class="feature">
-                <div class="content">
-                    <h2>Kitaptan Sinemaya</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <a href="./life.html">
+                <div class="feature">
+                    <div class="content">
+                        <h2>Kitaptan Sinemaya</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
         
         <div class="parent" onclick="">
-            <div class="feature">
-                <div class="content">
-                    <h2>Kitaptan Resme</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <a href="./life.html">
+                <div class="feature">
+                    <div class="content">
+                        <h2>Kitaptan Resme</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
         
         <div class="parent" onclick="">
-            <div class="feature">
-                <div class="content">
-                    <h2>Kitaptan Bilime</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <a href="./life.html">
+                <div class="feature">
+                    <div class="content">
+                        <h2>Kitaptan Bilime</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
         
 
@@ -127,7 +108,7 @@
         <div class="container">
             <h2 class="title">Sizden Gelenler</h2> 
             <p>Kitaplar, sanat ve bilim adamlarına her zaman ilham kaynağı olmuşlardır. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa velit incidunt pariatur dolor quo repellendus praesentium eos nobis quis architecto.</p>
-            <a class="button-a" href="#">
+            <a class="button-a" href="./fromyou.html">
                 <div class="button">
                     <span class="button-text">Devamını Oku</span>
                     <span class="spacer"></span>
@@ -168,9 +149,10 @@
         </div>
     </section>
 
+    <!--FOOTER-->
+    ${require('./_footer.html')}
 
     <!-- SCRIPTS -->
     <script src="index.js"></script>
-
 </body>
 </html>

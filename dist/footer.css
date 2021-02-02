@@ -1,0 +1,23 @@
+/* FOOTER */
+.footer {
+    padding: 20px 0;
+    background-color: var(--primary-color);
+
+    display: grid;
+    place-items: center;
+}
+
+.footer .container {
+    width: 100%;
+    color: white;
+
+    /* border: 1px dashed yellow; */
+
+    display: flex;
+    justify-content: center;
+}
+
+.footer .container p {
+    color: rgba(255,255,255,.6);
+    text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+}
