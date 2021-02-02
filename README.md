@@ -4,6 +4,6 @@
 
 npm init
 
-npm i --save-dev html-includes
+npm install
 
 npm run compile
