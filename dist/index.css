@@ -1,77 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400;1,600&display=swap');
-
-@import url(./header.css);
-@import url(./footer.css);
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --header-height: 45px;
-    --padding-left-small: 0 24px;
-    --padding-left-medium: 0 48px;
-    --padding-left-large: 0 110px;
-    --primary-color: rgb(42, 47, 74);
-    --secondary-color: #9BF2FF;
-    --complementary-color: rgb(36, 41, 67);
-}
-
-body {
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
-}
-
-
+@import url(./global.css);
 
 /* HERO */
 
 .hero {
-    padding: 100px 0;
-    letter-spacing: .0625rem;
-
-    background-image: url(images/hero1.jpg);
-    background-size: cover;
-
-    display: grid;
-    place-items: center;
-
-    position: relative;
+    background-image: url(images/hero.jpg);
 }
 
 .hero::after {
-    content: "";
-
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
     background-color: rgba(30, 39, 61, 0.8);
-}
-
-.hero .container {
-    width: 100%;
-    max-width: 1540px;
-    padding: var(--padding-left-small);
-    color: white;
-
-    /* border: 1px dashed yellow; */
-
-    display: flex;
-    flex-direction: column;
-
-    position: relative;
-    z-index: 1;
-}
-
-.hero h1 {
-    width: 320px;
-    font-weight: 600;
-    font-size: 2.2em;
-    padding-bottom: 10px;
-    border-bottom: 3px solid white;
 }
 
 .hero .content {
@@ -97,38 +33,10 @@ body {
     height: 2rem;
 }
 
-/* Very Small devices */
-@media only screen and (max-width: 480px) {
 
-} 
-
-/* Small devices */
-@media only screen and (min-width: 480px) {
-    .hero {
-        padding: 60px 0;
-    }
-
-    .hero h1 {
-        padding-bottom: 15px;
-    }
-} 
 
 /* Middle devices */
 @media only screen and (min-width: 740px) {
-    .hero {
-        padding: 150px 0;
-    }
-
-    .hero .container {
-        padding: var(--padding-left-medium);
-    }
-
-    .hero h1 {
-        width: 480px;
-        font-size: 3em;  
-        padding-bottom: 24px;
-    }
-
     .hero .content {
         flex-direction: row;
         align-items: center;
@@ -146,18 +54,6 @@ body {
 
 /* Large devices */
 @media only screen and (min-width: 1280px) {
-    .hero {
-        letter-spacing: .25rem;
-    }
-    .hero .container {
-        padding: var(--padding-left-large);
-    }
-    
-    .hero h1 {
-        width: 720px;
-        font-size: 4rem;
-    }
-    
     .hero .content p {
         font-size: 0.8rem;
         font-weight: 700;
@@ -241,50 +137,50 @@ body {
 /* Kitaptan Heykele */
 .main .parent:nth-child(1) .feature {
     /* border: 1px dashed red; */
-    background-image: url(images/heykel1.jpg);
+    background-image: var(--backimage-sculpt);
 }
 .main .parent:nth-child(1) .feature::after {
-    background-color: rgba(97, 172, 198, 0.8);
+    background-color: var(--backcolor-sculpt);
 }
 
 /* Kitaptan Mimariye */
 .main .parent:nth-child(2) .feature {
-    background-image: url(images/mimari1.jpg);
+    background-image: var(--backimage-architecht);
 }
 .main .parent:nth-child(2) .feature::after {
-    background-color:rgba(132, 131, 189, .8);
+    background-color: var(--backcolor-architecht);
 }
 
 /* Kitaptan Müziğe */
 .main .parent:nth-child(3) .feature {
-    background-image: url(images/music1.jpg);
+    background-image: var(--backimage-music);
 }
 .main .parent:nth-child(3) .feature::after {
-    background-color:rgba(130, 184, 158, 0.8);
+    background-color: var(--backcolor-music);
 }
 
-/* Kitaptan Müziğe */
+/* Kitaptan sinemaya */
 .main .parent:nth-child(4) .feature {
-    background-image: url(images/sinema2.jpg);
+    background-image: var(--backimage-cinema);
 }
 .main .parent:nth-child(4) .feature::after {
-    background-color:rgba(216, 137, 131, 0.6);
+    background-color: var(--backcolor-cinema);
 }
 
-/* Kitaptan Müziğe */
+/* Kitaptan Resime */
 .main .parent:nth-child(5) .feature {
-    background-image: url(images/resim1.jpg);
+    background-image: var(--backimage-paint);
 }
 .main .parent:nth-child(5) .feature::after {
-    background-color:rgba(219, 177, 139, 0.8);
+    background-color: var(--backcolor-paint);
 }
 
-/* Kitaptan Hayata */
+/* Kitaptan Bilime */
 .main .parent:nth-child(6) .feature {
-    background-image: url(images/bilim.jpg);
+    background-image: var(--backimage-science);
 }
 .main .parent:nth-child(6) .feature::after {
-    background-color:rgba(127, 152, 207, 0.8);
+    background-color: var(--backcolor-science);
 }
 
 
@@ -381,18 +277,6 @@ body {
     place-items: center;
 }
 
-.fromyou .container {
-    width: 100%;
-    max-width: 1540px;
-    padding: var(--padding-left-small);
-    color: white;
-
-    /* border: 1px dashed yellow; */
-
-    display: flex;
-    flex-direction: column;
-}
-
 .fromyou .title {
     width: 220px;
     font-weight: 600;
@@ -428,10 +312,6 @@ body {
         padding: 80px 0;
     }
 
-    .fromyou .container {
-        padding: var(--padding-left-medium);
-    }
-
     .fromyou .title {
         width: 300px;
         font-size: 2rem;  
@@ -453,10 +333,6 @@ body {
 
     .fromyou {
         padding: 100px 0;
-    }
-
-    .fromyou .container {
-        padding: var(--padding-left-large);
     }
 
     .fromyou .title {
@@ -482,18 +358,6 @@ body {
 
     display: grid;
     place-items: center;
-}
-
-.form-area .container {
-    width: 100%;
-    max-width: 1540px;
-    padding: var(--padding-left-small);
-    color: white;
-
-    /* border: 1px dashed yellow; */
-
-    display: flex;
-    flex-direction: column;
 }
 
 .input-text, .input-textarea {
@@ -559,10 +423,6 @@ body {
 }
 
 @media only screen and (min-width: 740px) {
-    .form-area .container {
-        padding: var(--padding-left-medium);
-    }
-
     #myform {
         display: flex;
         flex-direction: row;
@@ -610,10 +470,6 @@ body {
 }
 
 @media only screen and (min-width: 1280px) {
-    .form-area .container {
-        padding: var(--padding-left-large);
-    }
-
     #myform {
         display: grid;
         grid-template-columns: 1fr 1fr;

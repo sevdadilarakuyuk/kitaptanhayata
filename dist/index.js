@@ -87,8 +87,12 @@ function handleParams () {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const page = urlParams.get('page')
+
     const title = document.getElementById("title");
     title.innerHTML = "Kitaptan " +  page;
+
+    const myh1 = document.getElementsByClassName("hero-title")[0];
+    myh1.innerHTML = "Kitaptan " +  page;
 }
 
 

@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400;1,600&display=swap');
+
+@import url(./header.css);
+@import url(./footer.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --header-height: 45px;
+    --padding-left-small: 0 24px;
+    --padding-left-medium: 0 48px;
+    --padding-left-large: 0 110px;
+    --primary-color: rgb(42, 47, 74);
+    --secondary-color: #9BF2FF;
+    --complementary-color: rgb(36, 41, 67);
+    --third-color: rgb(46, 52, 80);
+    --max-width: 1540px;
+
+    --backimage-sculpt: url(images/sculpt.jpg);
+    --backcolor-sculpt: rgba(97, 172, 198, 0.8);
+    --backimage-architecht: url(images/architect.jpg);
+    --backcolor-architecht: rgba(132, 131, 189, 0.8);
+    --backimage-music: url(images/music.jpg);
+    --backcolor-music: rgba(130, 184, 158, 0.8);
+    --backimage-cinema: url(images/cinema.jpg);
+    --backcolor-cinema: rgba(216, 137, 131, 0.6);
+    --backimage-paint: url(images/paint.jpg);
+    --backcolor-paint: rgba(219, 177, 139, 0.8);
+    --backimage-science: url(images/science.jpg);
+    --backcolor-science: rgba(127, 152, 207, 0.8);
+}
+
+body {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+
+/* GENERAL-HERO */
+
+/* HERO */
+
+.hero {
+    padding: 100px 0;
+    letter-spacing: .0625rem;
+
+    background-size: cover;
+
+    display: grid;
+    place-items: center;
+
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero .hero-title {
+    width: 320px;
+    font-weight: 600;
+    font-size: 2.2em;
+    padding-bottom: 10px;
+    border-bottom: 3px solid white;
+    text-transform: capitalize;
+}
+
+.hero .vertical-spacer {
+    display: block;
+    height: 2rem;
+}
+
+
+/* Very Small devices */
+@media only screen and (max-width: 480px) {
+
+} 
+
+/* Small devices */
+@media only screen and (min-width: 480px) {
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero .hero-title {
+        padding-bottom: 15px;
+    }
+} 
+
+/* Middle devices */
+@media only screen and (min-width: 740px) {
+    .hero {
+        padding: 150px 0;
+    }
+
+    .hero .hero-title {
+        width: 480px;
+        font-size: 3em;  
+        padding-bottom: 24px;
+    }
+} 
+
+/* Large devices */
+@media only screen and (min-width: 1280px) {
+    .hero {
+        letter-spacing: .25rem;
+    }
+    
+    .hero .hero-title {
+        width: 720px;
+        font-size: 4rem;
+    }
+} 
+
+
+
+/* GENERAL CONTAINER */
+
+.general-container {
+    width: 100%;
+    max-width: var(--max-width);
+    padding: var(--padding-left-small);
+    color: white;
+
+    /* border: 1px dashed yellow; */
+
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    z-index: 1;
+}
+
+@media only screen and (min-width: 740px) {
+    .general-container {
+        padding: var(--padding-left-medium);
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .general-container {
+        padding: var(--padding-left-large);
+    }
+}

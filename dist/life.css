@@ -1,27 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400;1,600&display=swap');
+@import url(./global.css);
 
-@import url(./header.css);
-@import url(./footer.css);
+/* HERO AREA */
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.hero {
+    padding: 150px 0;
+    background-image: url(images/heykel1.jpg);
 }
 
-:root {
-    --header-height: 45px;
-    --padding-left-small: 0 24px;
-    --padding-left-medium: 0 48px;
-    --padding-left-large: 0 110px;
-    --primary-color: rgb(42, 47, 74);
-    --secondary-color: #9BF2FF;
-    --complementary-color: rgb(36, 41, 67);
+.hero::after {
+    background-color: rgba(97, 172, 198, 0.8);
 }
 
-body {
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
-}
+
+/* MAIN AREA */
 
 .main {
     height: calc(100vh - 100px);
@@ -44,3 +35,4 @@ body {
     font-size: 2rem;
     font-weight: bold;
 }
+

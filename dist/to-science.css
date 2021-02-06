@@ -1,0 +1,55 @@
+@import url(./global.css);
+
+/* HERO AREA */
+
+.hero {
+    padding: 80px 0;
+    background-image: var(--backimage-science);
+}
+
+.hero::after {
+    background-color: var(--backcolor-science);
+}
+
+/* PAGE INFO AREA */
+.page-info {
+    padding: 60px 0;
+    background-color: var(--primary-color);
+    letter-spacing: .0625rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+
+    display: grid;
+    place-items: center;
+}
+
+/* MAIN AREA */
+
+.entry .image-container img {
+    width: 100%;
+    /* border: 1px solid blue; */
+}
+
+/* .entry .image-container {
+    border: 1px solid red;
+
+} */
+
+.entry .text-container {
+    background-color: var(--third-color);
+    padding: 40px 20px;
+    color: white;
+}
+
+.entry .text-container h3 {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.entry .text-container p {
+    line-height: 1.5rem;
+    font-weight: 300;
+}
+
