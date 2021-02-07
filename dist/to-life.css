@@ -121,6 +121,11 @@
     line-height: 1.5em;
 }
 
+.text-container span.source {
+    font-size: 75%;
+    color:rgb(99, 223, 154);
+}
+
 @media only screen and (max-width: 740px) {
 
 
