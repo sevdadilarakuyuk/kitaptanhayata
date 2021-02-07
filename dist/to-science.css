@@ -70,7 +70,7 @@
     margin-top: 5px;
 
     position: relative;
-    z-index: 65;
+    z-index: 2;
 }
 
 .image-container img {
@@ -89,7 +89,7 @@
     margin-bottom: 5px;
 
     position: relative;
-    z-index: 65;
+    z-index: 2;
 }
 
 .entry:nth-child(odd) .text-container {
@@ -174,7 +174,7 @@
     .entry .text-container {
         flex-grow: 10;
         padding: 50px 40px;
-        font-size: 24px;
+        font-size: 22px;
     }
 }
 
