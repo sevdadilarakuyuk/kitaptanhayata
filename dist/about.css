@@ -1,40 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400;1,600&display=swap');
+@import url(./global.css);
 
-@import url(./header.css);
-@import url(./footer.css);
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --header-height: 45px;
-    --padding-left-small: 0 24px;
-    --padding-left-medium: 0 48px;
-    --padding-left-large: 0 110px;
-    --primary-color: rgb(42, 47, 74);
-    --secondary-color: #9BF2FF;
-    --complementary-color: rgb(36, 41, 67);
-}
-
-body {
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
-}
-
-.main {
-    height: calc(100vh - 100px);
+.about-us {
+    padding: 60px 0;
+    background-color: var(--third-color);
 
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
-.main .container {
-    padding: var(--padding-left-small);
-    border: 1px solid;
+.about-us h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3.6rem;
+    letter-spacing: 1px;
 
-    display: grid;
-    place-items: center;
+    width: 240px;
+    border-bottom: 2px solid white;
+
+    display: inline-block !important;
+}
+
+.about-us img {
+    margin: 25px 0;
+    max-height: 200px;
+}
+
+.about-us p {
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+
+    text-indent: 50px; 
+    text-align: justify;
+
+    padding-bottom: 24px;
+}
+
+@media only screen and (max-width: 740px) {
+
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 740px) {
+    .about-us h1 {
+        font-size: 2rem;
+        line-height: 4rem;
+        width: 260px;
+    }
+
+    .about-us p {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+    }
+} 
+
+
+/* Large devices */
+@media only screen and (min-width: 1280px) {
+    .about-us h1 {
+        font-size: 2.5rem;
+        line-height: 5rem;
+        width: 320px;
+    }
+
+    .about-us p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+}
+
+/* Large devices */
+@media only screen and (min-width: 1680px) {
+    .about-us h1 {
+        font-size: 3rem;
+        line-height: 6rem;
+        width: 400px;
+    }
+
+    .about-us p {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+    }
 }
