@@ -1,4 +1,6 @@
 @import url(./global.css);
+@import url(./button.css);
+
 
 /* HERO */
 
@@ -529,89 +531,3 @@
         letter-spacing: 3px;
     }
 }
-
-
-/* &&&&&&&&&&&&&&&    BUTTON    &&&&&&&&&&&&&&& */
-
-.button-a {
-    width: 200px;
-    color: white;
-    text-decoration: none;
-
-    /* border: 1px dashed; */
-
-    display: inline-block;  
-
-    transition: color 0.3s ease-out;
-}
-
-.button-a:hover {
-    color: var(--secondary-color);
-    transition: color 0.3s ease-out;
-}
-
-.button {
-    width: 200px;
-    font-size: 1rem;
-    letter-spacing: 0.0625rem;
-    text-transform: uppercase;
-    padding: 7px 0;
-
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-
-    border: 2px solid white;
-    transition: border-color 0.3s ease-out;
-}
-
-.button:hover {
-    border-color: var(--secondary-color);
-    transition: border-color 0.3s ease-out;
-}
-
-.button .spacer {
-    display: inline-block;
-    width: 1.5rem;
-    /* border: 1px dashed yellowgreen; */
-}
-
-.button .material-icons {
-    transform: scaleX(1.6);
-}
-
-
-/* Very Small devices */
-@media only screen and (max-width: 480px) {
-
-} 
-
-/* Small devices */
-@media only screen and (min-width: 480px) {
-    
-} 
-
-/* Middle devices */
-@media only screen and (min-width: 740px) {
-    
-}
- 
-/* Large devices */
-@media only screen and (min-width: 1280px) {
-    .button-a {
-        width: 260px;
-    }
-
-    .button {
-        width: 260px;
-        font-size: 1.2rem;
-        letter-spacing: 0.125rem;
-        padding: 10px 0;
-    }
-
-    .button .spacer {
-        width: 1.6rem;
-    }
-
-} 

@@ -1,6 +1,6 @@
 @import url(./global.css);
 
-.about-us {
+.about {
     padding: 60px 0;
     background-color: var(--third-color);
 
@@ -8,7 +8,7 @@
     justify-content: center;
 }
 
-.about-us h1 {
+.about h1 {
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 3.6rem;
@@ -20,12 +20,12 @@
     display: inline-block !important;
 }
 
-.about-us img {
+.about img {
     margin: 25px 0;
     max-height: 200px;
 }
 
-.about-us p {
+.about p {
     letter-spacing: 1.5px;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -43,13 +43,13 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 740px) {
-    .about-us h1 {
+    .about h1 {
         font-size: 2rem;
         line-height: 4rem;
         width: 260px;
     }
 
-    .about-us p {
+    .about p {
         font-size: 1.1rem;
         line-height: 1.8rem;
     }
@@ -58,13 +58,13 @@
 
 /* Large devices */
 @media only screen and (min-width: 1280px) {
-    .about-us h1 {
+    .about h1 {
         font-size: 2.5rem;
         line-height: 5rem;
         width: 320px;
     }
 
-    .about-us p {
+    .about p {
         font-size: 1.2rem;
         line-height: 2rem;
     }
@@ -72,13 +72,13 @@
 
 /* Large devices */
 @media only screen and (min-width: 1680px) {
-    .about-us h1 {
+    .about h1 {
         font-size: 3rem;
         line-height: 6rem;
         width: 400px;
     }
 
-    .about-us p {
+    .about p {
         font-size: 1.4rem;
         line-height: 2.4rem;
     }

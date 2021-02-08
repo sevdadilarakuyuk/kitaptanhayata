@@ -1,6 +1,7 @@
 @import url(./global.css);
+@import url(./button.css);
 
-/* HERO AREA */
+/* HERO AREA IN PAGES */
 
 .hero {
     padding: 80px 0;
@@ -10,7 +11,6 @@
 .hero::after {
     background-color: var(--backcolor-science);
 }
-
 
 /* PAGE INFO AREA */
 .page-info {
@@ -62,13 +62,11 @@
 
 .entry .bar {
     display: block;
-    height: 3px;
+    height: 13px;
     background-color: var(--backcolor-science);
 }
 
 .entry .image-container {
-    margin-top: 5px;
-
     position: relative;
     z-index: 2;
 }
@@ -76,7 +74,7 @@
 .image-container img {
     width: 100%;
     vertical-align: bottom;
-    max-width: 1100px;
+    /* max-width: 2000px; */
     /* border: 1px solid blue; */
 }
 
@@ -85,8 +83,6 @@
     color: white;
     font-size: 16px;
     text-align: justify;
-
-    margin-bottom: 5px;
 
     position: relative;
     z-index: 2;
@@ -100,15 +96,14 @@
     background-color: var(--complementary-color);
 }
 
-.entry:last-child .text-container {
-    margin-bottom: 2px;
+.entry:first-child > span.bar{
+    display: none;
 }
 
 .text-container h3 {
     padding-right: 20px;
     padding-bottom: 20px;
     border-bottom: 2px solid white;
-    margin-bottom: 20px;
 
     font-size: 1.5em;
 
@@ -119,6 +114,7 @@
     font-size: 1em;
     font-weight: 300;
     line-height: 1.5em;
+    margin: 20px auto;
 }
 
 .text-container span.source {
@@ -138,7 +134,7 @@
     }
 }
 
-@media only screen and (min-width: 952px) {
+@media only screen and (min-width: 964px) {
     .entry {
         display: flex;
         padding: 0;
@@ -161,19 +157,17 @@
     }
 
     .entry .image-container {
-        margin: 0;
         flex: 4;
     }
 
     .entry .text-container {
-        margin: 0;
         flex: 5;
     }
 }
 
 @media only screen and (min-width: 1280px) {
     .entry .image-container img{
-        width: 550px;
+        width: 500px;
     }
 
     .entry .text-container {

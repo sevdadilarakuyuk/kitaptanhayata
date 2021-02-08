@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sizden Gelenler</title>
+    <title>Kitaptan Hayata</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-    <link rel="stylesheet" href="fromyou.css">
+    <link rel="stylesheet" href="book.css">
 </head>
 <body>
 
@@ -48,11 +48,30 @@
 
 
 
-    <!-- SECTION -->
-    <section class="main">
-       <div class="container">
-           Burada sizden gelen kitaptan hayat değişim kompozisyonları yer alacak.
+    <!-- PAGE SUBJECT -->
+    <section class="subject">
+        <h1 class="subject-title">Kitaptan Bilime</h1> 
+     </section>
+
+    <!-- PAGE MOTTO -->
+    <section class="page-motto">
+        <div class="general-container">
+            <p>Bilimin doğasında ilham veya karşı çıkış vardır!</p>
         </div>
+    </section>
+
+    <!-- MAIN -->
+    <section class="book">
+        <div class="general-container">
+            <!-- Lightweight client-side loader that feature-detects and load polyfills only when necessary -->
+            <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
+    
+            <!-- Load the element definition -->
+            <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+    
+            <!-- Simply set the `src` attribute to your MD file and win -->
+            <zero-md src="books/1001.md"></zero-md>
+        </div> 
     </section>
 
 
@@ -65,6 +84,7 @@
 
     <!-- SCRIPTS -->
     <script src="index.js"></script>
+
 
 </body>
 </html>
