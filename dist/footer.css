@@ -17,7 +17,14 @@
     justify-content: center;
 }
 
-.footer .container p {
+.footer p {
     color: rgba(255,255,255,.6);
     text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.footer span {
+    font-size: 80%;
+    color: rgba(255,255,255,.3);
+    text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+    padding-left: 10px;
 }

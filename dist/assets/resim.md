@@ -1,0 +1,3 @@
+# Edebiyattan Resime
+
+Türk resim dünyasında önemli bir yere sahip olan **Abidin Dino** okumuş olduğu **Nazım Hikmet’**in **“Kuvayı Milliye”** isimli eserini çok beğenerek 1968 yılında bu eserin onda uyandırdığı duyguları resmetmiştir. “Resim-şiir arasındaki ilişki benim için her zaman önemli olmuştur.” diyen Dino şiirlerdeki imgeleri dikkate alarak sanatını icraa etme başarısını göstermiştir. (Aysun Aydın, Abidin Dino’nun Resimlerinde Yaşayan Edebiyat)

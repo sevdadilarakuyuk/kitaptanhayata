@@ -1,0 +1,84 @@
+@import url(./global.css);
+
+/* PAGE SUBJECT */
+.subject {
+    padding: 30px 0;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: white;
+
+    display: grid;
+    place-items: center;
+}
+
+/* PAGE INFO AREA */
+.page-motto {
+    padding: 6px 0;
+    background-color: var(--third-color);
+    font-weight: 300;
+
+    letter-spacing: 1px;
+    text-align: center;
+
+    display: grid;
+    place-items: center;
+    display: none;
+}
+
+.gradient-bar{
+    display: block;
+    width: 100%;
+    height: 5px;
+}
+
+.rainbow-box {
+    background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%
+    );
+}
+
+/* BOOK AREA */
+
+.main {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.general-container {
+    max-width: 1400px;
+}
+
+@media only screen and (min-width: 740px) {
+    .subject {
+        font-size: 24px;
+    }
+    .page-motto {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .subject {
+        font-size: 28px;
+    }
+
+    .page-motto {
+        font-size: 20px;
+    }
+}
+
+
+/* MAIN AREA */

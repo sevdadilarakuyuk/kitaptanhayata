@@ -147,10 +147,10 @@
 
 /* Kitaptan Mimariye */
 .main .parent:nth-child(2) .feature {
-    background-image: var(--backimage-architecht);
+    background-image: var(--backimage-architect);
 }
 .main .parent:nth-child(2) .feature::after {
-    background-color: var(--backcolor-architecht);
+    background-color: var(--backcolor-architect);
 }
 
 /* Kitaptan Müziğe */
