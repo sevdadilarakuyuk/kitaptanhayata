@@ -11,11 +11,14 @@
         .subject {
             background-color: var(--backcolor-science);
         }
-        .footer {
-            position: fixed; 
-            position: -webkit-fixed; /* Safari */ 
-            bottom: 0;
-            width: 100%;
+        
+        @media only screen and (min-width: 740px) {
+            .footer {
+                position: fixed; 
+                position: -webkit-fixed; /* Safari */ 
+                bottom: 0;
+                width: 100%;
+            }
         }
     </style>
 </head>
